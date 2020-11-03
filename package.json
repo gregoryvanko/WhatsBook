@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/gregoryvanko/WhatsBook/issues"
   },
-  "homepage": "https://github.com/gregoryvanko/WhatsBook#readme"
+  "homepage": "https://github.com/gregoryvanko/WhatsBook#readme",
+  "dependencies": {
+    "@gregvanko/corex": "^4.46.0"
+  }
 }
