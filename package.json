@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon —inspect exemple.js",
     "save": "git add -A && git commit -a -m 'auto save' && npm version minor && npm publish && git push",
-    "prod": "npm --prefix /var/www/NodeJs/Production/WhatsBook update && npm --prefix /var/www/NodeJs/Production/WhatsBook version minor"
+    "Prod": "npm --prefix /var/www/NodeJs/Production/WhatsBook update && npm --prefix /var/www/NodeJs/Production/WhatsBook version minor"
   },
   "nodemonConfig": {
     "ext": "css, js",
