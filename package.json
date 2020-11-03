@@ -1,0 +1,25 @@
+{
+  "name": "@gregvanko/whatsbook",
+  "version": "1.0.0",
+  "description": "WhatsBook : your own facebook",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon —inspect exemple.js",
+    "save": "git add -A && git commit -a -m 'auto save' && npm version minor && npm publish && git push",
+    "prod": "npm --prefix /var/www/NodeJs/Production/WhatsBook update && npm --prefix /var/www/NodeJs/Production/WhatsBook version minor"
+  },
+  "nodemonConfig": {
+    "ext": "css, js",
+    "delay": "5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregoryvanko/WhatsBook.git"
+  },
+  "author": "gregvanko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregoryvanko/WhatsBook/issues"
+  },
+  "homepage": "https://github.com/gregoryvanko/WhatsBook#readme"
+}
