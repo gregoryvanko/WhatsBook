@@ -34,5 +34,4 @@ class AppTheWhatsBook{
         Socket.emit("WhatsBookError", `ToDo Start Action on server`)
     }
 }
-
 module.exports.AppTheWhatsBook = AppTheWhatsBook
