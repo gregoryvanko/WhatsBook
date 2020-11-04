@@ -54,7 +54,7 @@ class TheWhatsBook{
     }
 }
 
-// Creation de l'application 1
+// Creation de l'application
 let TheWhatsBookApp = new TheWhatsBook(GlobalCoreXGetAppContentId())
-// Ajout de l'application 1
+// Ajout de l'application
 GlobalCoreXAddApp(TheWhatsBookApp.GetTitre(), TheWhatsBookApp.GetImgSrc(),TheWhatsBookApp.Start.bind(TheWhatsBookApp))

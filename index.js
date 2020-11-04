@@ -9,8 +9,10 @@ class WhatsBook {
            MongoUrl: "mongodb://localhost:27017"
         }
         this._MyApp = new corex(this._OptionApplication)
-        // Variable interne
         this._Debug = Debug
+
+        let AppTheWhatsBookR = require('./Backend/AppTheWhatsBook').AppTheWhatsBook
+        this._AppTheWhatsBook = new AppTheWhatsBookR(this._MyApp)
      }
   
      /* Start de l'application */
@@ -50,6 +52,9 @@ class WhatsBook {
         this._MyApp.CommonAppFolder = __dirname + "/Frontend/Common"
         // Chemin relatif de l'icone
         //this._MyApp.IconRelPath = __dirname + "/apple-icon-192x192.png"
+        // SocketIo
+        this._MyApp.AddSocketIoFct("WhatsBook", this._AppTheWhatsBook.Api.bind(this._AppTheWhatsBook))
+        // Start
         this._MyApp.Start()
         }
  }
