@@ -31,7 +31,7 @@ class AppTheWhatsBook{
      * @param {String} UserId Id du user
      */
     Start(Value, Socket, User, UserId){
-        Socket.emit("WhatsBookError", `Start action not defined`)
+        Socket.emit("WhatsBookError", `ToDo Start Action on server`)
     }
 }
 
