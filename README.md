@@ -1,5 +1,5 @@
 # WhatsBook
-A Node.js application. WhatsBooks is your own Facebook
+WhatsBooks is your own Facebook with NodeJs
 
 ## Usage
 First, install the package using npm:
