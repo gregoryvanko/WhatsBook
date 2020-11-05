@@ -1,6 +1,6 @@
 {
   "name": "@gregvanko/whatsbook",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "description": "WhatsBook : your own facebook",
   "main": "index.js",
   "scripts": {
