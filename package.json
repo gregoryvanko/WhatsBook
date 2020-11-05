@@ -7,8 +7,7 @@
     "start": "nodemon —inspect exemple.js",
     "saveN": "npm version minor && npm publish",
     "saveG": "git add -A && git commit -a -m 'auto save' && git push",
-    "save": "npm run saveG && npm run saveN",
-    "saveall": "git add -A && git commit -a -m 'auto save' && npm version minor && npm publish && git push",
+    "save": "git add -A && git commit -a -m 'auto save' && npm version minor && npm publish && git push",
     "Prod": "npm --prefix /var/www/NodeJs/Production/WhatsBook update && npm --prefix /var/www/NodeJs/Production/WhatsBook version minor"
   },
   "nodemonConfig": {
