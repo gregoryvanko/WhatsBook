@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/gregoryvanko/WhatsBook#readme",
   "dependencies": {
-    "@gregvanko/corex": "^4.48.0"
+    "@gregvanko/corex": "^4.49.0"
   }
 }
