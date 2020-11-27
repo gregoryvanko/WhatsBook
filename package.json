@@ -5,10 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon —inspect exemple.js",
-    "saveN": "npm version minor && npm publish",
-    "saveG": "git add -A && git commit -a -m 'auto save' && git push",
-    "save": "git add -A && git commit -a -m 'auto save' && npm version minor && npm publish && git push",
-    "Prod": "npm --prefix /var/www/NodeJs/Production/WhatsBook update && npm --prefix /var/www/NodeJs/Production/WhatsBook version minor"
+    "up": "npm version minor && npm publish",
+    "save": "git add -A && git commit -a -m 'auto save' && npm version minor && npm publish && git push"
   },
   "nodemonConfig": {
     "ext": "css, js",
@@ -25,6 +23,6 @@
   },
   "homepage": "https://github.com/gregoryvanko/WhatsBook#readme",
   "dependencies": {
-    "@gregvanko/corex": "^4.49.0"
+    "@gregvanko/corex": "^4.60.0"
   }
 }
