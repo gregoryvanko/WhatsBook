@@ -1,4 +1,4 @@
-class TheWhatsBook{
+class WhatsBook{
     constructor(HtmlId){
         this._DivApp = document.getElementById(HtmlId)
     }
@@ -55,6 +55,6 @@ class TheWhatsBook{
 }
 
 // Creation de l'application
-let TheWhatsBookApp = new TheWhatsBook(GlobalCoreXGetAppContentId())
+let WhatsBookApp = new WhatsBook(GlobalCoreXGetAppContentId())
 // Ajout de l'application
-GlobalCoreXAddApp(TheWhatsBookApp.GetTitre(), TheWhatsBookApp.GetImgSrc(),TheWhatsBookApp.Start.bind(TheWhatsBookApp))
+GlobalCoreXAddApp(WhatsBookApp.GetTitre(), WhatsBookApp.GetImgSrc(),WhatsBookApp.Start.bind(WhatsBookApp))

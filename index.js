@@ -11,8 +11,8 @@ class WhatsBook {
         this._MyApp = new corex(this._OptionApplication)
         this._Debug = Debug
 
-        let AppTheWhatsBookR = require('./Backend/AppTheWhatsBook').AppTheWhatsBook
-        this._AppTheWhatsBook = new AppTheWhatsBookR(this._MyApp)
+        let WhatsBookR = require('./Backend/WhatsBook').WhatsBook
+        this._WhatsBook = new WhatsBookR(this._MyApp)
      }
   
      /* Start de l'application */
@@ -53,7 +53,7 @@ class WhatsBook {
         // Chemin relatif de l'icone
         //this._MyApp.IconRelPath = __dirname + "/apple-icon-192x192.png"
         // SocketIo
-        this._MyApp.AddSocketIoFct("WhatsBook", this._AppTheWhatsBook.Api.bind(this._AppTheWhatsBook))
+        this._MyApp.AddSocketIoFct("WhatsBook", this._WhatsBook.Api.bind(this._WhatsBook))
         // Start
         this._MyApp.Start()
         }

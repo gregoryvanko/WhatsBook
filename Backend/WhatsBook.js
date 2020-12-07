@@ -1,24 +1,24 @@
-class AppTheWhatsBook{
+class WhatsBook{
     constructor(MyApp){
         this._MyApp = MyApp
     }
 
     /**
-     * Socket API de la page TheWhatsBook
+     * Socket API de la page WhatsBook
      * @param {Object} Data Object envoyé par SocketIO : Data.Action, Data.Value
      * @param {Socket} Socket SocketIO
      * @param {String} User Nom du user
      * @param {String} UserId Id du user
      */
     Api(Data, Socket, User, UserId){
-        this._MyApp.LogAppliInfo("SoApi TheWhatsBook Data:" + JSON.stringify(Data), User, UserId)
+        this._MyApp.LogAppliInfo("SoApi WhatsBook Data:" + JSON.stringify(Data), User, UserId)
         switch (Data.Action) {
             case "Start":
                 this.Start(Data.Value, Socket, User, UserId)
                 break
             default:
-                this._MyApp.LogAppliError(`Api TheWhatsBook error, Action ${Data.Action} not found`, User, UserId)
-                Socket.emit("PlayerError", `Api TheWhatsBook error, Action ${Data.Action} not found`)
+                this._MyApp.LogAppliError(`Api WhatsBook error, Action ${Data.Action} not found`, User, UserId)
+                Socket.emit("PlayerError", `Api WhatsBook error, Action ${Data.Action} not found`)
                 break
         }
     }
@@ -34,4 +34,4 @@ class AppTheWhatsBook{
         Socket.emit("WhatsBookError", `ToDo Start Action on server`)
     }
 }
-module.exports.AppTheWhatsBook = AppTheWhatsBook
+module.exports.WhatsBook = WhatsBook
