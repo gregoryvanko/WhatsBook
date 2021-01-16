@@ -10,10 +10,10 @@ npm install @gregvanko/whatsbook --save
 ## File App.js
 Create a "App.js" file with this content:
 ```js
-let Aquagreen = require('@gregvanko/whatsbook').Aquagreen
+let MyWhatsBookApp = require('./index').WhatsBook
 const Name = "WhatsBook"
-const Port = 9002
-const Debug = false
-let MyApp = new Aquagreen(Name, Port, Debug)
+const Port = 5000
+const Debug = true
+let MyApp = new MyWhatsBookApp(Name, Port, Debug)
 MyApp.Start()
 ```

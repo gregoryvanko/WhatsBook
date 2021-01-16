@@ -9,7 +9,7 @@
   },
   "nodemonConfig": {
     "ext": "css, js",
-    "delay": "5000"
+    "delay": "1000"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/gregoryvanko/WhatsBook#readme",
   "dependencies": {
-    "@gregvanko/corex": "^4.60.0"
+    "@gregvanko/corex": "^4.72.0"
   }
 }
